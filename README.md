@@ -1,3 +1,4 @@
+#web Crawler
 **Web Crawler to Word Generator (Single-Page)**
 Overview
 This project is a custom web crawler designed to extract content from a single web page and generate a structured Microsoft Word document (.docx) with the crawled information. Users can enter a URL, crawl the page, and save the extracted content in a customizable Word document. The system is built using Python, Flask, BeautifulSoup, and python-docx, and offers an easy-to-use interface for both technical and non-technical users.
