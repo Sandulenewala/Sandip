@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Crawler UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Web Crawler Interface</h2>
+    <form action="" method="POST">
+        <label for="username">Enter Username (URL):</label>
+        <input type="text" id="username" name="username" placeholder="https://example.com" required>
+
+        <label for="filename">Output File Name:</label>
+        <input type="text" id="filename" name="filename" placeholder="output.docx" required>
+
+        <div class="buttons">
+            <button type="submit" formaction="/single-page">Single Page Output</button>
+            <button type="submit" formaction="/multi-page">Multiple Page Output</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
